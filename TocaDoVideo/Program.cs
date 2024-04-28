@@ -21,7 +21,7 @@ namespace TocaDoVideo
                               "[2] Listar Produtos\n" +
                               "[3] Remover Produtos\n" +
                               "[4] Entrada Estoque\n" +
-                              "[5] Saída Estoque" +
+                              "[5] Saída Estoque\n" +
                               "[0] Sair");
             Console.WriteLine("Escolha o número referente a opção desejada:\n");
 
