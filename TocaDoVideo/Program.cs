@@ -59,7 +59,10 @@ namespace TocaDoVideo
                     break;
             }
 
-            MostrarMenu();
+            if(opcao != "0")
+            {
+                MostrarMenu();
+            }
         }
     }
 }

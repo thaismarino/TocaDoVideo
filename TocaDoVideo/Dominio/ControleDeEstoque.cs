@@ -23,7 +23,7 @@ namespace TocaDoVideo.Dominio
             }
             else
             {
-                produto.Codigo = index++;
+                produto.Codigo = ++index;
             }
 
             produto.QuantidadeEstoque = 0;
@@ -67,7 +67,7 @@ namespace TocaDoVideo.Dominio
 
             foreach (Produto produto in _produtos)
             {
-                Console.WriteLine("#" + produto.Codigo + ": \n");
+                Console.WriteLine("#Código: " + produto.Codigo + " \n");
                 Console.WriteLine("Data/Hora Cadastro: " + produto.DataCadastro.ToString("dd/MM/yyyy HH:mm") + "\n");
                 Console.WriteLine("Nome: " + produto.Nome + "\n");
                 Console.WriteLine("Preço: " + produto.Preco.ToString("C", CultureInfo.GetCultureInfo("pt-BR")) + "\n"); // Formatação de valor
